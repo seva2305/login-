@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../public/login.css">
+    <title>Login Page</title>
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-image: linear-gradient(195deg,rgba(112, 137, 75, 0.842),rgb(234, 229, 96));
+    background-size: 100% 740px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contain {
+    width: 350px;
+    height: 350px;
+    /* background-image: linear-gradient(195deg,white,black); */
+    background-color: black;
+    margin-left: 36%;
+    margin-top: 7%;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+}
+.contain h2{
+    font-size: 36px;
+    color:aquamarine;
+}
+.contain .text {
+    position: relative;
+    top: 7%;
+}
+
+.input1 {
+    border: none;
+    background-color: black;
+    border-bottom: 2px solid white; 
+    width: 300px;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 5%;
+    outline: none;
+    color: white;
+}
+.input1:hover{
+    border-radius: 30px;
+
+}
+
+.text button {
+    width: 250px;
+    height: 44px;
+    background-color:aquamarine;
+    color: black;
+    border: none;
+    font-size: 22px;
+    border-radius: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+button:hover{
+    border: 3px solid aquamarine;
+    color: white;
+    font-size: 20px;
+    background-color: black;
+    border-radius: 30px 80px;
+}
+p{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+p span {
+    color :aquamarine;
+    cursor: pointer;
+}
+
+.a{
+    color: aquamarine;
+}
+     </style>
+    
+    </head>
+        <body>
+            <div class ="contain">
+                <div class ="text"> 
+                    <h2><u>Login</u></h2>
+                    <Form action="/login" method="post">
+                    <input class="input1" type ="text" name="name" placeholder="Name">
+                    <input class="input1" type ="password" name="password" placeholder="password">
+                    <button type="submit">Login</button>
+                    <p>Not a member? <span><a href="./signup" style="color: aquamarine;">SignUp</span></a></p>
+                    </Form>
+                </div>
+            </div>
+        </body>
+</html>

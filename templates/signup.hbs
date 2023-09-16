@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SingUp</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-size: 100% 740px;
+    background-image: linear-gradient(192deg,white,black);
+    font-family: 'Roboto', sans-serif;
+}
+
+.contain {
+    width: 350px;
+    height: 350px;
+    background-color: black;
+    margin-left: 36%;
+    margin-top: 7%;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+}
+.contain h1{
+    font-size: 36px;
+    color:aquamarine;
+}
+.contain .text {
+    position: relative;
+    top: 7%;
+}
+.text button {
+    width: 250px;
+    height: 44px;
+    background-color:aquamarine;
+    color: black;
+    border: none;
+    font-size: 22px;
+    border-radius: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+button:hover{
+    border: 3px solid aquamarine;
+    color: white;
+    font-size: 20px;
+    background-color: black;
+}
+
+.input1 {
+    border: none;
+    background-color: black;
+    border-bottom: 2px solid white; 
+    width: 300px;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 5%;
+    outline: none;
+    color: white;
+}
+.input1:hover{
+    border-radius: 30px;
+}
+.text button {
+    width: 250px;
+    height: 44px;
+    background-color:aquamarine;
+    color: black;
+    border: none;
+    font-size: 22px;
+    border-radius: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+button:hover{
+    border: 3px solid aquamarine;
+    color: white;
+    font-size: 20px;
+    background-color: black;
+    border-radius:30px 80px;
+}
+
+p{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+p span {
+    color :aquamarine;
+    cursor: pointer;
+}
+
+.a{
+    color: aquamarine;
+}
+
+        </style>
+    </head>
+    <link rel="stylesheet" href="../public/signup.css">
+    <body>
+            <div class ="contain">
+            <div class ="text"> 
+            <h1><u>Sign Up</u></h1>
+            <form action="/signup" method="post">
+            <input type="text" class="input1" name="name" placeholder="Username">
+            <input class="input1" type ="password" name="password" placeholder="password">
+            <button type="submit">Submit</button>
+            <p>Already member<span><a href="./login" style="color: aquamarine;">Login</span></a></p>
+            </form> 
+        </body>
+</html>
